@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page_wrapper mob_white grey_bg">
+
+        <div class="inner_header">
+            <div class="fr_desktop">
+                <div class="wrapp_menu">
+                    <div class="inner_logo">
+                        <img src="images/inner_logo.png">
+                    </div>
+                    <ul class="inner_lft_list">
+                        <li><a href="#">EXCHANGE</a></li>
+                        <li ><a href="#">P2P</a></li>
+                    </ul>
+                </div>
+                <ul class="inner_lft_list flt_rgt">
+                    <li><a href="#">Deposit Dhamaka</a></li>
+                    <li><a href="#">Invite & Earn 50% Fees</a></li>
+                    <li><a href="#" class="flx"><i class="fa fa-mobile color_icn" aria-hidden="true"></i> <span>Download Apps</span></a></li>
+                    <li class="login_nav"><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</a></li>
+                    <li><a href="#" data-toggle="tooltip" title="Help & Support" data-placement="left"><i class="fa fa-question-circle-o color_icn" aria-hidden="true"></i></a></li>
+
+                </ul>
+            </div>
+
+            <div class="mob_inner">
+                <div class="inner_logo">
+                    <img class="mob_logo" src="images/inner_logo.png">
+                    <img class="inner_toggle_bar" src="images/inner_toggle_bar.svg">
+                </div>
+
+                <ul class="inner_lft_list mob_list">
+                    <li><a href="#">EXCHANGE</a></li>
+                    <li class="active"><a href="#">P2P</a></li>
+                    <li><a href="#">Deposit Dhamaka</a></li>
+                    <li><a href="#">Invite & Earn 50% Fees</a></li>
+                    <li><a href="#"><i class="fa fa-mobile color_icn" aria-hidden="true" ></i> <span class="down_app">Download Apps</span></a></li>
+                    <li class="login_nav"><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</a></li>
+                    <li><a href="#"><i class="fa fa-question-circle-o color_icn" aria-hidden="true"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="signup_wrapprer">
+            <div class="signup_col">
+                <h3>Signup to WazirX</h3>
+
+                <form>
+
+                    <div class="wrapp_field">
+                        <p>Let’s start by submitting your registration details.</p>
+
+                        <div class="form_group">
+                            <label>EMAIL</label>
+                            <input type="text" placeholder="Enter your email">
+                        </div>
+                        <div class="form_group">
+                            <label>PASSWORD</label>
+                            <input type="text" placeholder="Enter your password">
+                        </div>
+                        <div class="form_group">
+                            <label>CONFIRM PASSWORD</label>
+                            <input type="text" placeholder="Enter your confirm password">
+                        </div>
+                    </div>
+
+                    <div class="checkbox_col">
+                        <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                        <label for="styled-checkbox-1">I agree to WazirX's <a href="#">Terms of Service</a></label>
+                    </div>
+
+                    <button class="sign_up_btn">Sign Up</button>
+
+                    <a href="#" class="login">Log In</a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".inner_toggle_bar").click(function() {
+                $(".mob_list").toggleClass("show");
+
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+</body>
+
+</html>
